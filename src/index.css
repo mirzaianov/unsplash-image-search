@@ -28,11 +28,12 @@ body {
   justify-content: center;
   flex-direction: column;
   min-height: 100vh;
+  max-width: 992px;
 }
 
 .title {
   text-align: center;
-  margin-top: var(--default-margin);
+  margin-top: var(--medium-margin);
   color: #7676d7;
 }
 
@@ -42,7 +43,7 @@ body {
   align-items: center;
   gap: var(--default-margin);
   margin-top: var(--medium-margin);
-  margin-bottom: var(--larger-margin);
+  margin-bottom: var(--medium-margin);
 }
 
 .buttons .btn,
@@ -74,7 +75,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: var(--default-margin);
+  margin-top: var(--medium-margin);
 }
 
 .search-section .search-input {
@@ -133,7 +134,7 @@ body {
 }
 
 .images .image:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 /* images section ends */

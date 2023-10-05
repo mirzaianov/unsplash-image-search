@@ -4,7 +4,7 @@ import { Button, Form } from 'react-bootstrap';
 import './index.css';
 
 const API_URL = 'https://api.unsplash.com/search/photos';
-const IMAGES_PER_PAGE = 20;
+const IMAGES_PER_PAGE = 12;
 
 function App() {
   const searchInput = useRef(null);
