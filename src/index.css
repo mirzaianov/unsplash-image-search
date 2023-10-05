@@ -1,15 +1,18 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
+  /* font-family: 'Synonym', sans-serif; */
   line-height: 1.5;
   font-weight: 400;
   --default-spacing: 10px;
   --default-margin: 1rem;
   --medium-margin: 3rem;
   --larger-margin: 5rem;
-  --primary-color: #7676d7;
+  /* --primary-color: #7676d7; */
+  --primary-color: var(--bs-primary);
 }
 
 * {
+  font-family: 'Segoe UI', sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -32,9 +35,11 @@ body {
 }
 
 .title {
+  font-family: 'Young Serif', serif;
+  font-weight: bold;
   text-align: center;
   margin-top: var(--medium-margin);
-  color: #7676d7;
+  color: var(--primary-color);
 }
 
 .buttons {
@@ -60,12 +65,12 @@ body {
   text-align: center;
 }
 
-.loading {
+/* .loading {
   color: #6565d4;
   text-align: center;
   margin-top: 20px;
   font-size: 20px;
-}
+} */
 
 /* common css ends */
 
@@ -102,7 +107,7 @@ body {
 
 .filters > * {
   padding: 5px 10px;
-  background: #7676d7;
+  background: var(--primary-color);
   color: #fff;
   border-radius: 5px;
   cursor: pointer;
