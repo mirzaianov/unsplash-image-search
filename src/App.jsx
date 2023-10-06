@@ -1,4 +1,3 @@
-import axios from 'axios';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import './index.css';
@@ -17,13 +16,14 @@ function App() {
     try {
       if (searchInput.current.value) {
         setErrorMsg('');
-        const { data } = await axios.get(
+        const response = await fetch(
           `${API_URL}?query=${
             searchInput.current.value
           }&page=${page}&per_page=${IMAGES_PER_PAGE}&client_id=${
             import.meta.env.VITE_API_KEY
           }`,
         );
+        const data = await response.json();
         setImages(data.results);
         setTotalPages(data.total_pages);
       }

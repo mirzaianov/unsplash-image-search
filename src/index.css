@@ -1,13 +1,10 @@
 :root {
-  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
-  /* font-family: 'Synonym', sans-serif; */
   line-height: 1.5;
   font-weight: 400;
   --default-spacing: 10px;
   --default-margin: 1rem;
   --medium-margin: 3rem;
   --larger-margin: 5rem;
-  /* --primary-color: #7676d7; */
   --primary-color: var(--bs-primary);
 }
 
@@ -65,13 +62,6 @@ body {
   color: #ff0000;
   text-align: center;
 }
-
-/* .loading {
-  color: #6565d4;
-  text-align: center;
-  margin-top: 20px;
-  font-size: 20px;
-} */
 
 /* common css ends */
 
@@ -132,10 +122,8 @@ body {
   height: 200px;
   justify-self: center;
   align-self: center;
-  /* margin-left: 2rem; */
   border-radius: 10px;
   transition: transform 0.5s;
-  /*  */
   object-fit: cover;
 }
 
@@ -145,13 +133,6 @@ body {
 
 /* images section ends */
 
-/* Responsive adjustments */
-/* @media (max-width: 768px) {
-  .images {
-    grid-template-columns: repeat(2, 200px);
-  }
-} */
-
 @media (max-width: 480px) {
   .search-section {
     margin-block: var(--default-spacing);
@@ -159,8 +140,6 @@ body {
 
   .search-section .search-input {
     min-width: 90%;
-    /* min-width: unset; */
-    /* margin: 0 var(--default-margin); */
   }
 
   .images {
