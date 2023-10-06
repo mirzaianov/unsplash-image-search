@@ -44,7 +44,7 @@ function App() {
 
   const handleSearch = (event) => {
     event.preventDefault();
-    console.log(searchInput.current.value);
+    // console.log(searchInput.current.value);
     resetSearch();
   };
 
@@ -53,7 +53,7 @@ function App() {
     resetSearch();
   };
 
-  console.log('page', page);
+  // console.log('page', page);
 
   return (
     <div className="container">

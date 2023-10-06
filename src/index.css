@@ -77,6 +77,7 @@ body {
 .search-section .search-input {
   min-width: 410px;
   padding: var(--default-spacing);
+  border-color: var(--primary-color);
 }
 
 .search-section .search-btn {
