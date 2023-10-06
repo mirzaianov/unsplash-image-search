@@ -79,12 +79,18 @@ function App() {
       </div>
       <div className="images">
         {images.map((image) => (
-          <img
+          <a
             key={image.id}
-            src={image.urls.small}
-            alt={image.alt_description}
-            className="image"
-          />
+            href={image.links.html}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              src={image.urls.small}
+              alt={image.alt_description}
+              className="image"
+            />
+          </a>
         ))}
       </div>
       <div className="buttons">
