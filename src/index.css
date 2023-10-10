@@ -144,6 +144,7 @@ body {
   }
 
   .images {
+    margin-inline: auto;
     grid-template-columns: 1fr;
   }
 
